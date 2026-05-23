@@ -1,4 +1,3 @@
-GitHub Workflow - YAML Github Workflow (github-workflow.jason)
 #CI de Nívek 02 - Disparo Manual através de clique
 
 # nome da pipeline
@@ -45,4 +44,3 @@ jobs:
             - name: Executando testes e2e
               run: yarn run e2e
 
-              
