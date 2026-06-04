@@ -1,21 +1,33 @@
 export default {
   clearMocks: true,
-
   collectCoverage: true,
-  collectCoverageFrom: ['src/**/*.js'],
-  coverageDirectory: 'reports/coverage',
-  coverageProvider: 'babel',
-  coverageReporters: ['text', 'lcov'],
+  collectCoverageFrom: ["api/**/*.js", "rides/**/*.js"],
+  coverageDirectory: "coverage",
+  coverageProvider: "v8",
 
-  setupFiles: ['<rootDir>/test/setup.js'],
+  coverageReporters: ["cobertura", "text", "lcov"],
 
-  testEnvironment: 'jsdom',
+  reporters: [
+    "default",
+    ["jest-junit", { outputDirectory: ".", outputName: "junit.xml" }]
+  ],
 
-  testPathIgnorePatterns: ['/node_modules/', '/e2e/'],
+  setupFiles: ["./jest.setup.js"],
 
-  // ESSENCIAL PARA FUNCIONAR COM ES MODULES
+  testEnvironment: "jsdom",
+
+  // 👉 IGNORAR PLAYWRIGHT
+  testPathIgnorePatterns: [
+    "/node_modules/",
+    "/dist/",
+    "/e2e/"
+  ],
+
+  // 👉 TRATAR .js COMO ESM
+  //extensionsToTreatAsEsm: [".js"],
+
+  // 👉 USAR BABEL PARA TRANSFORMAR ES MODULES
   transform: {
-  '^.+\\.js$': 'babel-jest'
+    "^.+\\.js$": ["babel-jest", { presets: ["@babel/preset-env"] }]
   }
-
 };
