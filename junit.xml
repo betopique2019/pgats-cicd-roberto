@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="21" failures="0" errors="0" time="15.018">
+  <testsuite name="Router" errors="0" failures="0" skipped="0" timestamp="2026-06-04T14:40:03" time="12.975" tests="3">
+    <testcase classname="Router should immediately emit the current route onNext" name="Router should immediately emit the current route onNext" time="0.015">
+    </testcase>
+    <testcase classname="Router should emit on next" name="Router should emit on next" time="0.001">
+    </testcase>
+    <testcase classname="Router should be able to unsubscribe" name="Router should be able to unsubscribe" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="ridesSummary" errors="0" failures="0" skipped="0" timestamp="2026-06-04T14:40:03" time="12.983" tests="2">
+    <testcase classname="ridesSummary should provide &quot;person&quot; postfix for 1" name="ridesSummary should provide &quot;person&quot; postfix for 1" time="0.01">
+    </testcase>
+    <testcase classname="ridesSummary should provide &quot;people&quot; postfix for 2" name="ridesSummary should provide &quot;people&quot; postfix for 2" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="RideService" errors="0" failures="0" skipped="0" timestamp="2026-06-04T14:40:03" time="13.043" tests="2">
+    <testcase classname="RideService should retrieve rides from the server when getRides is called" name="RideService should retrieve rides from the server when getRides is called" time="0.016">
+    </testcase>
+    <testcase classname="RideService should retrieve a specific ride from the server when getRide is called" name="RideService should retrieve a specific ride from the server when getRide is called" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="OrderService" errors="0" failures="0" skipped="0" timestamp="2026-06-04T14:40:03" time="13.05" tests="2">
+    <testcase classname="OrderService currentOrder should retrieve from storage" name="OrderService currentOrder should retrieve from storage" time="0.014">
+    </testcase>
+    <testcase classname="OrderService currentOrder should retrieve undefined when there is no order yes" name="OrderService currentOrder should retrieve undefined when there is no order yes" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="RoboCoastersComponent" errors="0" failures="0" skipped="0" timestamp="2026-06-04T14:40:03" time="13.133" tests="4">
+    <testcase classname="RoboCoastersComponent should display &lt;robo-choose-ride&gt; by default" name="RoboCoastersComponent should display &lt;robo-choose-ride&gt; by default" time="0.035">
+    </testcase>
+    <testcase classname="RoboCoastersComponent should display &lt;robo-choose-ride&gt; when navigating to the root" name="RoboCoastersComponent should display &lt;robo-choose-ride&gt; when navigating to the root" time="0.005">
+    </testcase>
+    <testcase classname="RoboCoastersComponent should display &lt;robo-ride&gt; when navigated to &quot;/ride/something&quot;" name="RoboCoastersComponent should display &lt;robo-ride&gt; when navigated to &quot;/ride/something&quot;" time="0.006">
+    </testcase>
+    <testcase classname="RoboCoastersComponent should display &lt;robo-success&gt; when navigated to &quot;/success&quot;" name="RoboCoastersComponent should display &lt;robo-success&gt; when navigated to &quot;/success&quot;" time="0.004">
+    </testcase>
+  </testsuite>
+  <testsuite name="SuccessComponent" errors="0" failures="0" skipped="0" timestamp="2026-06-04T14:40:03" time="13.151" tests="1">
+    <testcase classname="SuccessComponent should render" name="SuccessComponent should render" time="0.028">
+    </testcase>
+  </testsuite>
+  <testsuite name="ChooseRideComponent" errors="0" failures="0" skipped="0" timestamp="2026-06-04T14:40:03" time="13.172" tests="1">
+    <testcase classname="ChooseRideComponent should navigate to ride page when chosen a ride" name="ChooseRideComponent should navigate to ride page when chosen a ride" time="0.024">
+    </testcase>
+  </testsuite>
+  <testsuite name="RideComponent" errors="0" failures="0" skipped="0" timestamp="2026-06-04T14:40:03" time="13.254" tests="6">
+    <testcase classname="RideComponent should navigate back on cancel" name="RideComponent should navigate back on cancel" time="0.019">
+    </testcase>
+    <testcase classname="RideComponent should navigate back when ride cannot be found" name="RideComponent should navigate back when ride cannot be found" time="0.004">
+    </testcase>
+    <testcase classname="RideComponent change people dropdown should render correct number of height inputs" name="RideComponent change people dropdown should render correct number of height inputs" time="0.012">
+    </testcase>
+    <testcase classname="RideComponent submit should allow if height check is disabled" name="RideComponent submit should allow if height check is disabled" time="0.017">
+    </testcase>
+    <testcase classname="RideComponent submit should allow if person has correct height" name="RideComponent submit should allow if person has correct height" time="0.007">
+    </testcase>
+    <testcase classname="RideComponent submit should not allow person does not have the correct height" name="RideComponent submit should not allow person does not have the correct height" time="0.003">
+    </testcase>
+  </testsuite>
+</testsuites>
