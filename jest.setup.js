@@ -9,17 +9,5 @@ Object.defineProperty(global, 'localStorage', {
   writable: true
 });
 
-// Mock global fetch para testes
-global.fetch = jest.fn();
-
-// Mock global Response para testes
-global.Response = class {
-  constructor(body, init) {
-    this.body = body;
-    this.status = init?.status || 200;
-  }
-
-  async json() {
-    return JSON.parse(this.body);
-  }
-};
+// Polyfill de fetch para ambiente JSDOM
+import 'whatwg-fetch';
