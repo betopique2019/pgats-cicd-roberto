@@ -74,4 +74,4 @@ Os três exercícios foram concluídos com sucesso:
 - Uso de Actions do GitHub Marketplace  
 - Self‑hosted agent implementado e executando jobs  
 
-A entrega está completa e documentada.
+A entrega está completa e documentada..
