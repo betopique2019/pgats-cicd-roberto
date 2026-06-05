@@ -24,4 +24,4 @@ jobs:
     - uses: actions/upload-artifact@v4
       with:
         name: cobertura
-        path: pgats-cicd/coverage/
+        path: coverage/
