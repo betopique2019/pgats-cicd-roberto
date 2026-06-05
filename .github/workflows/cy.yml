@@ -19,6 +19,8 @@ jobs:
 
     - run: yarn install
 
+    - run: mkdir coverage
+
     - run: yarn test --coverage
 
     - uses: actions/upload-artifact@v4
