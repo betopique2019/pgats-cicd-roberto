@@ -12,7 +12,7 @@ export default {
     "src/router.js"
   ],
 
-  coverageDirectory: "coverage",
+  coverageDirectory: "<rootDir>/coverage",
   coverageProvider: "v8",
 
   // 👉 GERAR COBERTURA NO FORMATO QUE O AZURE DEVOPS LÊ
