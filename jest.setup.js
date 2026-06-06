@@ -4,9 +4,9 @@ Object.defineProperty(global, 'localStorage', {
     getItem: jest.fn(),
     setItem: jest.fn(),
     removeItem: jest.fn(),
-    clear: jest.fn()
+    clear: jest.fn(),
   },
-  writable: true
+  writable: true,
 });
 
 // Polyfill de fetch para ambiente JSDOM

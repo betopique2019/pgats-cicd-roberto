@@ -1,5 +1,5 @@
+# Entrega do Desafio – CI/CD com GitHub Actions
 
-# Entrega do Desafio – CI/CD com GitHub Actions  
 Pós-Graduação em Automação de Testes – PGATS  
 Aluno: **Roberto Piqueira**
 
@@ -9,11 +9,11 @@ Aluno: **Roberto Piqueira**
 
 Implementar um pipeline de **Integração Contínua (CI)** utilizando **GitHub Actions**, capaz de:
 
-- Instalar dependências  
-- Executar testes automatizados com **Jest**  
-- Gerar relatório de cobertura  
-- Criar a pasta de cobertura sem falhas  
-- Publicar o relatório como **artifact**  
+- Instalar dependências
+- Executar testes automatizados com **Jest**
+- Gerar relatório de cobertura
+- Criar a pasta de cobertura sem falhas
+- Publicar o relatório como **artifact**
 - Garantir execução automática a cada push no branch `master`
 
 ---
@@ -30,7 +30,7 @@ O pipeline foi implementado no arquivo:
 2. **Instalação das dependências**
 3. **Execução dos testes com Jest**
 4. **Geração da pasta `coverage/`**
-5. **Criação da pasta com `mkdir -p coverage`**  
+5. **Criação da pasta com `mkdir -p coverage`**
    - Evita erro caso a pasta já exista
 6. **Upload do artifact de cobertura**
 
@@ -82,12 +82,12 @@ https://github.com/betopique2019/pgats-cicd-roberto
 
 ## ✔️ Resultado Final
 
-- Pipeline executando com sucesso  
-- Testes rodando corretamente  
-- Cobertura gerada  
-- Artifact publicado  
-- Repositório limpo e organizado  
-- README atualizado conforme o desafio  
+- Pipeline executando com sucesso
+- Testes rodando corretamente
+- Cobertura gerada
+- Artifact publicado
+- Repositório limpo e organizado
+- README atualizado conforme o desafio
 
 ---
 

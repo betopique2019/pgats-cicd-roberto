@@ -6,42 +6,38 @@ export default {
 
   // 👉 AGORA APONTANDO PARA OS ARQUIVOS REAIS DO PROJETO (dentro de src/)
   collectCoverageFrom: [
-    "src/components/**/*.js",
-    "src/services/**/*.js",
-    "src/pipes/**/*.js",
-    "src/router.js"
+    'src/components/**/*.js',
+    'src/services/**/*.js',
+    'src/pipes/**/*.js',
+    'src/router.js',
   ],
 
-  coverageDirectory: "<rootDir>/coverage",
-  coverageProvider: "v8",
+  coverageDirectory: '<rootDir>/coverage',
+  coverageProvider: 'v8',
 
   // 👉 GERAR COBERTURA NO FORMATO QUE O AZURE DEVOPS LÊ
-  coverageReporters: ["cobertura", "text", "lcov"],
+  coverageReporters: ['cobertura', 'text', 'lcov'],
 
   // 👉 GERAR ARQUIVO junit.xml PARA A PIPELINE
   reporters: [
-    "default",
-    ["jest-junit", { outputDirectory: ".", outputName: "junit.xml" }]
+    'default',
+    ['jest-junit', { outputDirectory: '.', outputName: 'junit.xml' }],
   ],
 
   // 👉 CARREGAR CONFIGURAÇÕES ANTES DOS TESTES
-  setupFiles: ["./jest.setup.js"],
+  setupFiles: ['./jest.setup.js'],
 
   // 👉 AMBIENTE DE TESTE
-  testEnvironment: "jsdom",
+  testEnvironment: 'jsdom',
 
   // 👉 IGNORAR TESTES E2E DO PLAYWRIGHT
-  testPathIgnorePatterns: [
-    "/node_modules/",
-    "/dist/",
-    "/e2e/"
-  ],
+  testPathIgnorePatterns: ['/node_modules/', '/dist/', '/e2e/'],
 
   // 👉 TRANSFORMAR TODO O CÓDIGO COM BABEL (ESSENCIAL PARA COBERTURA)
   transform: {
-    "^.+\\.js$": ["babel-jest", { presets: ["@babel/preset-env"] }]
+    '^.+\\.js$': ['babel-jest', { presets: ['@babel/preset-env'] }],
   },
 
   // 👉 NÃO IGNORAR NADA NA TRANSFORMAÇÃO
-  transformIgnorePatterns: []
+  transformIgnorePatterns: [],
 };

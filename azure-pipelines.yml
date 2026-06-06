@@ -1,85 +1,85 @@
 trigger:
-- main
+  - main
 
 pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: |
-    curl -fsSL https://deb.nodesource.com/setup_24.x | sudo -E bash -
-    sudo apt-get install -y nodejs
-    echo "Node versão:"
-    node -v
-  displayName: 'Instalar Node 24 manualmente'
+  - script: |
+      curl -fsSL https://deb.nodesource.com/setup_24.x | sudo -E bash -
+      sudo apt-get install -y nodejs
+      echo "Node versão:"
+      node -v
+    displayName: 'Instalar Node 24 manualmente'
 
-- script: |
-    npm install -g yarn
-  displayName: 'Instalar Yarn'
+  - script: |
+      npm install -g yarn
+    displayName: 'Instalar Yarn'
 
-- script: |
-    which node
-    yarn install
-  displayName: 'Instalar dependências'
+  - script: |
+      which node
+      yarn install
+    displayName: 'Instalar dependências'
 
-- script: |
-    yarn test --coverage
-  displayName: 'Executar testes com cobertura'
+  - script: |
+      yarn test --coverage
+    displayName: 'Executar testes com cobertura'
 
-- task: PublishCodeCoverageResults@2
-  displayName: 'Publicar cobertura de testes'
-  inputs:
-    codeCoverageTool: Cobertura
-    summaryFileLocation: '$(System.DefaultWorkingDirectory)/coverage/cobertura-coverage.xml'
-    reportDirectory: '$(System.DefaultWorkingDirectory)/coverage'
-    failIfCoverageEmpty: true
+  - task: PublishCodeCoverageResults@2
+    displayName: 'Publicar cobertura de testes'
+    inputs:
+      codeCoverageTool: Cobertura
+      summaryFileLocation: '$(System.DefaultWorkingDirectory)/coverage/cobertura-coverage.xml'
+      reportDirectory: '$(System.DefaultWorkingDirectory)/coverage'
+      failIfCoverageEmpty: true
 
-- task: PublishTestResults@2
-  displayName: 'Publicar resultados de testes'
-  inputs:
-    testResultsFormat: 'JUnit'
-    testResultsFiles: '**/junit.xml'
-    failTaskOnFailedTests: false
+  - task: PublishTestResults@2
+    displayName: 'Publicar resultados de testes'
+    inputs:
+      testResultsFormat: 'JUnit'
+      testResultsFiles: '**/junit.xml'
+      failTaskOnFailedTests: false
 
-# 🔔 Notificação Slack via WebHook (versão completa)
-- script: |
-    STATUS=$(Agent.JobStatus)
+  # 🔔 Notificação Slack via WebHook (versão completa)
+  - script: |
+      STATUS=$(Agent.JobStatus)
 
-    # Ícones
-    ICON="✔️"
-    COLOR="#36a64f"
-    if [ "$STATUS" != "Succeeded" ]; then
-      ICON="❌"
-      COLOR="#ff0000"
-    fi
+      # Ícones
+      ICON="✔️"
+      COLOR="#36a64f"
+      if [ "$STATUS" != "Succeeded" ]; then
+        ICON="❌"
+        COLOR="#ff0000"
+      fi
 
-    # Tempo total de execução
-    START=$(System.JobStartTime)
-    END=$(System.JobFinishTime)
-    DURATION=$(echo "$(( $(date -d "$END" +%s) - $(date -d "$START" +%s) ))s")
+      # Tempo total de execução
+      START=$(System.JobStartTime)
+      END=$(System.JobFinishTime)
+      DURATION=$(echo "$(( $(date -d "$END" +%s) - $(date -d "$START" +%s) ))s")
 
-    # Commit + mensagem
-    COMMIT=$(Build.SourceVersion)
-    MESSAGE="$(Build.SourceVersionMessage)"
+      # Commit + mensagem
+      COMMIT=$(Build.SourceVersion)
+      MESSAGE="$(Build.SourceVersionMessage)"
 
-    # Link direto para o pipeline
-    LINK="$(System.TeamFoundationCollectionUri)$(System.TeamProject)/_build/results?buildId=$(Build.BuildId)"
+      # Link direto para o pipeline
+      LINK="$(System.TeamFoundationCollectionUri)$(System.TeamProject)/_build/results?buildId=$(Build.BuildId)"
 
-    curl -X POST -H 'Content-type: application/json' \
-    --data "{
-      \"attachments\": [{
-        \"color\": \"$COLOR\",
-        \"title\": \"$ICON Pipeline $(Build.BuildNumber)\",
-        \"title_link\": \"$LINK\",
-        \"fields\": [
-          { \"title\": \"Status\", \"value\": \"$STATUS\", \"short\": true },
-          { \"title\": \"Branch\", \"value\": \"$(Build.SourceBranchName)\", \"short\": true },
-          { \"title\": \"Autor\", \"value\": \"$(Build.RequestedFor)\", \"short\": true },
-          { \"title\": \"Duração\", \"value\": \"$DURATION\", \"short\": true },
-          { \"title\": \"Commit\", \"value\": \"$COMMIT\", \"short\": false },
-          { \"title\": \"Mensagem\", \"value\": \"$MESSAGE\", \"short\": false }
-        ]
-      }]
-    }" \
-    $(SLACK_WEBHOOK_URL)
+      curl -X POST -H 'Content-type: application/json' \
+      --data "{
+        \"attachments\": [{
+          \"color\": \"$COLOR\",
+          \"title\": \"$ICON Pipeline $(Build.BuildNumber)\",
+          \"title_link\": \"$LINK\",
+          \"fields\": [
+            { \"title\": \"Status\", \"value\": \"$STATUS\", \"short\": true },
+            { \"title\": \"Branch\", \"value\": \"$(Build.SourceBranchName)\", \"short\": true },
+            { \"title\": \"Autor\", \"value\": \"$(Build.RequestedFor)\", \"short\": true },
+            { \"title\": \"Duração\", \"value\": \"$DURATION\", \"short\": true },
+            { \"title\": \"Commit\", \"value\": \"$COMMIT\", \"short\": false },
+            { \"title\": \"Mensagem\", \"value\": \"$MESSAGE\", \"short\": false }
+          ]
+        }]
+      }" \
+      $(SLACK_WEBHOOK_URL)
 
-  displayName: 'Notificar Slack'
+    displayName: 'Notificar Slack'
