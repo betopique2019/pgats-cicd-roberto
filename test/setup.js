@@ -1,3 +1,3 @@
-// Setup para testes usando CommonJS (CJS)
+// Setup para testes usando ES Modules (ESM)
 // Carrega o polyfill de fetch para o ambiente de testes
-require('whatwg-fetch');
+import 'whatwg-fetch';
