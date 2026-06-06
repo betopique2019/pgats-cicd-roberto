@@ -1,9 +1,857 @@
 <?xml version="1.0" ?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage lines-valid="0" lines-covered="0" line-rate="NaN" branches-valid="0" branches-covered="0" branch-rate="NaN" timestamp="1780592822404" complexity="0" version="0.1">
+<coverage lines-valid="481" lines-covered="481" line-rate="1" branches-valid="152" branches-covered="123" branch-rate="0.8092" timestamp="1780697959964" complexity="0" version="0.1">
   <sources>
     <source>J:\Win11_PRO\BACKUP\ESTUDOS\PÓS-AUTOMAÇÃO\PROGRAMAÇÃO PARA AUTOMAÇAO DE TESTES\DESAFIOS\DESAFIO01\pgats-cicd</source>
   </sources>
   <packages>
+    <package name="src" line-rate="1" branch-rate="1">
+      <classes>
+        <class name="router.js" filename="src\router.js" line-rate="1" branch-rate="1">
+          <methods>
+            <method name="Router" hits="7" signature="()V">
+              <lines>
+                <line number="7" hits="7"/>
+              </lines>
+            </method>
+            <method name="navigate" hits="3" signature="()V">
+              <lines>
+                <line number="15" hits="3"/>
+              </lines>
+            </method>
+            <method name="onNext" hits="3" signature="()V">
+              <lines>
+                <line number="19" hits="3"/>
+              </lines>
+            </method>
+            <method name="_get_currentRoute" hits="4" signature="()V">
+              <lines>
+                <line number="26" hits="4"/>
+              </lines>
+            </method>
+            <method name="_set_currentRoute" hits="3" signature="()V">
+              <lines>
+                <line number="30" hits="3"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="1" hits="1" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="2" hits="4" branch="false"/>
+            <line number="3" hits="4" branch="false"/>
+            <line number="4" hits="4" branch="false"/>
+            <line number="5" hits="4" branch="false"/>
+            <line number="6" hits="4" branch="false"/>
+            <line number="7" hits="4" branch="true" condition-coverage="100% (4/4)"/>
+            <line number="8" hits="7" branch="false"/>
+            <line number="9" hits="7" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="10" hits="1" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="11" hits="7" branch="false"/>
+            <line number="12" hits="7" branch="false"/>
+            <line number="13" hits="4" branch="false"/>
+            <line number="14" hits="4" branch="false"/>
+            <line number="15" hits="4" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="16" hits="3" branch="false"/>
+            <line number="17" hits="3" branch="false"/>
+            <line number="18" hits="4" branch="false"/>
+            <line number="19" hits="4" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="20" hits="3" branch="false"/>
+            <line number="21" hits="3" branch="false"/>
+            <line number="22" hits="3" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="23" hits="1" branch="false"/>
+            <line number="24" hits="3" branch="false"/>
+            <line number="25" hits="3" branch="false"/>
+            <line number="26" hits="4" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="27" hits="4" branch="false"/>
+            <line number="28" hits="4" branch="false"/>
+            <line number="29" hits="4" branch="false"/>
+            <line number="30" hits="3" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="31" hits="3" branch="false"/>
+            <line number="32" hits="3" branch="false"/>
+            <line number="33" hits="1" branch="false"/>
+            <line number="34" hits="1" branch="false"/>
+            <line number="35" hits="1" branch="false"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="src.components" line-rate="1" branch-rate="0.8965000000000001">
+      <classes>
+        <class name="choose-ride.component.js" filename="src\components\choose-ride.component.js" line-rate="1" branch-rate="0.8887999999999999">
+          <methods>
+            <method name="ChooseRideComponent" hits="1" signature="()V">
+              <lines>
+                <line number="6" hits="1"/>
+              </lines>
+            </method>
+            <method name="connectedCallback" hits="1" signature="()V">
+              <lines>
+                <line number="9" hits="1"/>
+              </lines>
+            </method>
+            <method name="_render" hits="2" signature="()V">
+              <lines>
+                <line number="6" hits="2"/>
+              </lines>
+            </method>
+            <method name="_renderOrderRow" hits="1" signature="()V">
+              <lines>
+                <line number="24" hits="1"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="1" hits="1" branch="false"/>
+            <line number="2" hits="1" branch="false"/>
+            <line number="3" hits="1" branch="false"/>
+            <line number="4" hits="1" branch="false"/>
+            <line number="5" hits="1" branch="false"/>
+            <line number="6" hits="1" branch="true" condition-coverage="75% (3/4)"/>
+            <line number="7" hits="2" branch="false"/>
+            <line number="8" hits="2" branch="false"/>
+            <line number="9" hits="2" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="10" hits="2" branch="false"/>
+            <line number="11" hits="2" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="12" hits="2" branch="false"/>
+            <line number="13" hits="2" branch="false"/>
+            <line number="14" hits="2" branch="false"/>
+            <line number="15" hits="2" branch="false"/>
+            <line number="16" hits="2" branch="false"/>
+            <line number="17" hits="2" branch="false"/>
+            <line number="18" hits="2" branch="false"/>
+            <line number="19" hits="2" branch="false"/>
+            <line number="20" hits="2" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="21" hits="2" branch="false"/>
+            <line number="22" hits="2" branch="false"/>
+            <line number="23" hits="1" branch="false"/>
+            <line number="24" hits="1" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="25" hits="1" branch="false"/>
+            <line number="26" hits="1" branch="false"/>
+            <line number="27" hits="1" branch="false"/>
+            <line number="28" hits="1" branch="false"/>
+            <line number="29" hits="1" branch="false"/>
+            <line number="30" hits="1" branch="false"/>
+            <line number="31" hits="1" branch="false"/>
+            <line number="32" hits="1" branch="false"/>
+            <line number="33" hits="1" branch="false"/>
+            <line number="34" hits="1" branch="false"/>
+            <line number="35" hits="1" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="36" hits="1" branch="false"/>
+            <line number="37" hits="1" branch="false"/>
+            <line number="38" hits="1" branch="false"/>
+            <line number="39" hits="1" branch="false"/>
+            <line number="40" hits="1" branch="false"/>
+            <line number="41" hits="1" branch="false"/>
+            <line number="42" hits="1" branch="false"/>
+          </lines>
+        </class>
+        <class name="choose-ride.template.js" filename="src\components\choose-ride.template.js" line-rate="1" branch-rate="1">
+          <methods>
+          </methods>
+          <lines>
+            <line number="1" hits="1" branch="false"/>
+            <line number="2" hits="1" branch="false"/>
+            <line number="3" hits="1" branch="false"/>
+            <line number="4" hits="1" branch="false"/>
+            <line number="5" hits="1" branch="false"/>
+            <line number="6" hits="1" branch="false"/>
+            <line number="7" hits="1" branch="false"/>
+            <line number="8" hits="1" branch="false"/>
+            <line number="9" hits="1" branch="false"/>
+            <line number="10" hits="1" branch="false"/>
+            <line number="11" hits="1" branch="false"/>
+            <line number="12" hits="1" branch="false"/>
+            <line number="13" hits="1" branch="false"/>
+            <line number="14" hits="1" branch="false"/>
+            <line number="15" hits="1" branch="false"/>
+            <line number="16" hits="1" branch="false"/>
+            <line number="17" hits="1" branch="false"/>
+            <line number="18" hits="1" branch="false"/>
+            <line number="19" hits="1" branch="false"/>
+            <line number="20" hits="1" branch="false"/>
+            <line number="21" hits="1" branch="false"/>
+            <line number="22" hits="1" branch="false"/>
+            <line number="23" hits="1" branch="false"/>
+            <line number="24" hits="1" branch="false"/>
+            <line number="25" hits="1" branch="false"/>
+          </lines>
+        </class>
+        <class name="ride.component.js" filename="src\components\ride.component.js" line-rate="1" branch-rate="0.96">
+          <methods>
+            <method name="RideComponent" hits="6" signature="()V">
+              <lines>
+                <line number="11" hits="6"/>
+              </lines>
+            </method>
+            <method name="get" hits="10" signature="()V">
+              <lines>
+                <line number="17" hits="10"/>
+              </lines>
+            </method>
+            <method name="set" hits="1" signature="()V">
+              <lines>
+                <line number="20" hits="1"/>
+              </lines>
+            </method>
+            <method name="getPeople" hits="3" signature="()V">
+              <lines>
+                <line number="33" hits="3"/>
+              </lines>
+            </method>
+            <method name="connectedCallback" hits="6" signature="()V">
+              <lines>
+                <line number="69" hits="6"/>
+              </lines>
+            </method>
+            <method name="hasValidHeight" hits="2" signature="()V">
+              <lines>
+                <line number="86" hits="2"/>
+              </lines>
+            </method>
+            <method name="_render" hits="13" signature="()V">
+              <lines>
+                <line number="11" hits="13"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="1" hits="1" branch="false"/>
+            <line number="2" hits="1" branch="false"/>
+            <line number="3" hits="1" branch="false"/>
+            <line number="4" hits="1" branch="false"/>
+            <line number="5" hits="1" branch="false"/>
+            <line number="6" hits="1" branch="false"/>
+            <line number="7" hits="1" branch="false"/>
+            <line number="8" hits="1" branch="false"/>
+            <line number="9" hits="1" branch="false"/>
+            <line number="10" hits="1" branch="false"/>
+            <line number="11" hits="1" branch="true" condition-coverage="75% (3/4)"/>
+            <line number="12" hits="13" branch="false"/>
+            <line number="13" hits="13" branch="false"/>
+            <line number="14" hits="13" branch="false"/>
+            <line number="15" hits="13" branch="false"/>
+            <line number="16" hits="13" branch="false"/>
+            <line number="17" hits="13" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="18" hits="13" branch="false"/>
+            <line number="19" hits="13" branch="false"/>
+            <line number="20" hits="13" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="21" hits="13" branch="false"/>
+            <line number="22" hits="13" branch="false"/>
+            <line number="23" hits="13" branch="false"/>
+            <line number="24" hits="13" branch="false"/>
+            <line number="25" hits="13" branch="false"/>
+            <line number="26" hits="13" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="27" hits="13" branch="false"/>
+            <line number="28" hits="13" branch="false"/>
+            <line number="29" hits="13" branch="false"/>
+            <line number="30" hits="13" branch="false"/>
+            <line number="31" hits="13" branch="false"/>
+            <line number="32" hits="13" branch="false"/>
+            <line number="33" hits="13" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="34" hits="13" branch="false"/>
+            <line number="35" hits="13" branch="false"/>
+            <line number="36" hits="13" branch="false"/>
+            <line number="37" hits="13" branch="false"/>
+            <line number="38" hits="13" branch="false"/>
+            <line number="39" hits="13" branch="false"/>
+            <line number="40" hits="13" branch="false"/>
+            <line number="41" hits="13" branch="true" condition-coverage="100% (4/4)"/>
+            <line number="42" hits="13" branch="false"/>
+            <line number="43" hits="13" branch="false"/>
+            <line number="44" hits="13" branch="false"/>
+            <line number="45" hits="13" branch="false"/>
+            <line number="46" hits="13" branch="false"/>
+            <line number="47" hits="13" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="48" hits="13" branch="false"/>
+            <line number="49" hits="13" branch="false"/>
+            <line number="50" hits="13" branch="false"/>
+            <line number="51" hits="13" branch="false"/>
+            <line number="52" hits="13" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="53" hits="13" branch="false"/>
+            <line number="54" hits="13" branch="false"/>
+            <line number="55" hits="13" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="56" hits="13" branch="false"/>
+            <line number="57" hits="13" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="58" hits="13" branch="false"/>
+            <line number="59" hits="13" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="60" hits="13" branch="false"/>
+            <line number="61" hits="13" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="62" hits="13" branch="false"/>
+            <line number="63" hits="13" branch="false"/>
+            <line number="64" hits="13" branch="false"/>
+            <line number="65" hits="13" branch="false"/>
+            <line number="66" hits="13" branch="false"/>
+            <line number="67" hits="13" branch="false"/>
+            <line number="68" hits="13" branch="false"/>
+            <line number="69" hits="13" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="70" hits="13" branch="false"/>
+            <line number="71" hits="13" branch="false"/>
+            <line number="72" hits="13" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="73" hits="13" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="74" hits="13" branch="false"/>
+            <line number="75" hits="13" branch="false"/>
+            <line number="76" hits="13" branch="false"/>
+            <line number="77" hits="13" branch="false"/>
+            <line number="78" hits="13" branch="false"/>
+            <line number="79" hits="13" branch="false"/>
+            <line number="80" hits="13" branch="false"/>
+            <line number="81" hits="13" branch="false"/>
+            <line number="82" hits="13" branch="false"/>
+            <line number="83" hits="13" branch="false"/>
+            <line number="84" hits="13" branch="false"/>
+            <line number="85" hits="13" branch="false"/>
+            <line number="86" hits="13" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="87" hits="13" branch="false"/>
+            <line number="88" hits="13" branch="false"/>
+            <line number="89" hits="13" branch="false"/>
+            <line number="90" hits="13" branch="false"/>
+            <line number="91" hits="13" branch="false"/>
+            <line number="92" hits="13" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="93" hits="6" branch="false"/>
+            <line number="94" hits="6" branch="false"/>
+            <line number="95" hits="6" branch="false"/>
+            <line number="96" hits="6" branch="false"/>
+            <line number="97" hits="6" branch="false"/>
+            <line number="98" hits="6" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="99" hits="4" branch="false"/>
+            <line number="100" hits="4" branch="false"/>
+            <line number="101" hits="4" branch="false"/>
+            <line number="102" hits="4" branch="false"/>
+            <line number="103" hits="4" branch="false"/>
+            <line number="104" hits="4" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="105" hits="6" branch="false"/>
+            <line number="106" hits="6" branch="false"/>
+            <line number="107" hits="6" branch="false"/>
+            <line number="108" hits="6" branch="false"/>
+            <line number="109" hits="6" branch="false"/>
+            <line number="110" hits="6" branch="false"/>
+            <line number="111" hits="6" branch="false"/>
+            <line number="112" hits="6" branch="false"/>
+            <line number="113" hits="6" branch="false"/>
+            <line number="114" hits="6" branch="false"/>
+            <line number="115" hits="6" branch="false"/>
+            <line number="116" hits="6" branch="false"/>
+            <line number="117" hits="4" branch="false"/>
+            <line number="118" hits="4" branch="false"/>
+            <line number="119" hits="4" branch="false"/>
+            <line number="120" hits="6" branch="false"/>
+            <line number="121" hits="13" branch="false"/>
+            <line number="122" hits="1" branch="false"/>
+            <line number="123" hits="1" branch="false"/>
+          </lines>
+        </class>
+        <class name="ride.template.js" filename="src\components\ride.template.js" line-rate="1" branch-rate="1">
+          <methods>
+          </methods>
+          <lines>
+            <line number="1" hits="1" branch="false"/>
+            <line number="2" hits="1" branch="false"/>
+            <line number="3" hits="1" branch="false"/>
+            <line number="4" hits="1" branch="false"/>
+            <line number="5" hits="1" branch="false"/>
+            <line number="6" hits="1" branch="false"/>
+            <line number="7" hits="1" branch="false"/>
+            <line number="8" hits="1" branch="false"/>
+            <line number="9" hits="1" branch="false"/>
+            <line number="10" hits="1" branch="false"/>
+            <line number="11" hits="1" branch="false"/>
+            <line number="12" hits="1" branch="false"/>
+            <line number="13" hits="1" branch="false"/>
+            <line number="14" hits="1" branch="false"/>
+            <line number="15" hits="1" branch="false"/>
+            <line number="16" hits="1" branch="false"/>
+            <line number="17" hits="1" branch="false"/>
+            <line number="18" hits="1" branch="false"/>
+            <line number="19" hits="1" branch="false"/>
+            <line number="20" hits="1" branch="false"/>
+            <line number="21" hits="1" branch="false"/>
+            <line number="22" hits="1" branch="false"/>
+            <line number="23" hits="1" branch="false"/>
+            <line number="24" hits="1" branch="false"/>
+            <line number="25" hits="1" branch="false"/>
+            <line number="26" hits="1" branch="false"/>
+            <line number="27" hits="1" branch="false"/>
+            <line number="28" hits="1" branch="false"/>
+            <line number="29" hits="1" branch="false"/>
+            <line number="30" hits="1" branch="false"/>
+            <line number="31" hits="1" branch="false"/>
+            <line number="32" hits="1" branch="false"/>
+            <line number="33" hits="1" branch="false"/>
+            <line number="34" hits="1" branch="false"/>
+            <line number="35" hits="1" branch="false"/>
+            <line number="36" hits="1" branch="false"/>
+            <line number="37" hits="1" branch="false"/>
+            <line number="38" hits="1" branch="false"/>
+            <line number="39" hits="1" branch="false"/>
+            <line number="40" hits="1" branch="false"/>
+            <line number="41" hits="1" branch="false"/>
+            <line number="42" hits="1" branch="false"/>
+            <line number="43" hits="1" branch="false"/>
+            <line number="44" hits="1" branch="false"/>
+            <line number="45" hits="1" branch="false"/>
+            <line number="46" hits="1" branch="false"/>
+            <line number="47" hits="1" branch="false"/>
+            <line number="48" hits="1" branch="false"/>
+            <line number="49" hits="1" branch="false"/>
+            <line number="50" hits="1" branch="false"/>
+            <line number="51" hits="1" branch="false"/>
+            <line number="52" hits="1" branch="false"/>
+            <line number="53" hits="1" branch="false"/>
+            <line number="54" hits="1" branch="false"/>
+            <line number="55" hits="1" branch="false"/>
+            <line number="56" hits="1" branch="false"/>
+            <line number="57" hits="1" branch="false"/>
+            <line number="58" hits="1" branch="false"/>
+            <line number="59" hits="1" branch="false"/>
+          </lines>
+        </class>
+        <class name="robo-coasters.component.js" filename="src\components\robo-coasters.component.js" line-rate="1" branch-rate="0.909">
+          <methods>
+            <method name="RoboCoastersComponent" hits="4" signature="()V">
+              <lines>
+                <line number="18" hits="4"/>
+              </lines>
+            </method>
+            <method name="connectedCallback" hits="4" signature="()V">
+              <lines>
+                <line number="22" hits="4"/>
+              </lines>
+            </method>
+            <method name="disconnectedCallback" hits="4" signature="()V">
+              <lines>
+                <line number="31" hits="4"/>
+              </lines>
+            </method>
+            <method name="render" hits="4" signature="()V">
+              <lines>
+                <line number="35" hits="4"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="1" hits="1" branch="false"/>
+            <line number="2" hits="1" branch="false"/>
+            <line number="3" hits="1" branch="false"/>
+            <line number="4" hits="1" branch="false"/>
+            <line number="5" hits="1" branch="false"/>
+            <line number="6" hits="1" branch="false"/>
+            <line number="7" hits="1" branch="false"/>
+            <line number="8" hits="1" branch="false"/>
+            <line number="9" hits="1" branch="false"/>
+            <line number="10" hits="1" branch="false"/>
+            <line number="11" hits="1" branch="false"/>
+            <line number="12" hits="1" branch="false"/>
+            <line number="13" hits="1" branch="false"/>
+            <line number="14" hits="1" branch="false"/>
+            <line number="15" hits="1" branch="false"/>
+            <line number="16" hits="1" branch="false"/>
+            <line number="17" hits="1" branch="false"/>
+            <line number="18" hits="1" branch="true" condition-coverage="66.66666666666666% (2/3)"/>
+            <line number="19" hits="4" branch="false"/>
+            <line number="20" hits="1" branch="false"/>
+            <line number="21" hits="1" branch="false"/>
+            <line number="22" hits="1" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="23" hits="4" branch="false"/>
+            <line number="24" hits="4" branch="false"/>
+            <line number="25" hits="4" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="26" hits="4" branch="false"/>
+            <line number="27" hits="4" branch="false"/>
+            <line number="28" hits="4" branch="false"/>
+            <line number="29" hits="4" branch="false"/>
+            <line number="30" hits="1" branch="false"/>
+            <line number="31" hits="1" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="32" hits="4" branch="false"/>
+            <line number="33" hits="4" branch="false"/>
+            <line number="34" hits="1" branch="false"/>
+            <line number="35" hits="1" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="36" hits="4" branch="false"/>
+            <line number="37" hits="4" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="38" hits="1" branch="false"/>
+            <line number="39" hits="1" branch="false"/>
+            <line number="40" hits="4" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="41" hits="1" branch="false"/>
+            <line number="42" hits="1" branch="false"/>
+            <line number="43" hits="4" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="44" hits="1" branch="false"/>
+            <line number="45" hits="4" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="46" hits="2" branch="false"/>
+            <line number="47" hits="2" branch="false"/>
+            <line number="48" hits="4" branch="false"/>
+            <line number="49" hits="4" branch="false"/>
+            <line number="50" hits="1" branch="false"/>
+            <line number="51" hits="1" branch="false"/>
+            <line number="52" hits="1" branch="false"/>
+          </lines>
+        </class>
+        <class name="robo.component.js" filename="src\components\robo.component.js" line-rate="1" branch-rate="0.7">
+          <methods>
+            <method name="RoboComponent" hits="12" signature="()V">
+              <lines>
+                <line number="1" hits="12"/>
+              </lines>
+            </method>
+            <method name="Selector" hits="23" signature="()V">
+              <lines>
+                <line number="14" hits="23"/>
+              </lines>
+            </method>
+            <method name="get" hits="21" signature="()V">
+              <lines>
+                <line number="19" hits="21"/>
+              </lines>
+            </method>
+            <method name="get" hits="62" signature="()V">
+              <lines>
+                <line number="26" hits="62"/>
+              </lines>
+            </method>
+            <method name="toKebabCase" hits="83" signature="()V">
+              <lines>
+                <line number="34" hits="83"/>
+              </lines>
+            </method>
+            <method name="cloneTemplate" hits="23" signature="()V">
+              <lines>
+                <line number="42" hits="23"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="1" hits="1" branch="true" condition-coverage="66.66666666666666% (2/3)"/>
+            <line number="2" hits="12" branch="false"/>
+            <line number="3" hits="1" branch="false"/>
+            <line number="4" hits="1" branch="false"/>
+            <line number="5" hits="1" branch="false"/>
+            <line number="6" hits="1" branch="false"/>
+            <line number="7" hits="1" branch="false"/>
+            <line number="8" hits="1" branch="false"/>
+            <line number="9" hits="1" branch="false"/>
+            <line number="10" hits="1" branch="false"/>
+            <line number="11" hits="1" branch="false"/>
+            <line number="12" hits="1" branch="false"/>
+            <line number="13" hits="1" branch="false"/>
+            <line number="14" hits="1" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="15" hits="23" branch="false"/>
+            <line number="16" hits="23" branch="false"/>
+            <line number="17" hits="23" branch="false"/>
+            <line number="18" hits="23" branch="false"/>
+            <line number="19" hits="23" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="20" hits="21" branch="true" condition-coverage="0% (0/1)"/>
+            <line number="21" hits="23" branch="false"/>
+            <line number="22" hits="23" branch="false"/>
+            <line number="23" hits="23" branch="false"/>
+            <line number="24" hits="23" branch="false"/>
+            <line number="25" hits="23" branch="false"/>
+            <line number="26" hits="23" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="27" hits="62" branch="true" condition-coverage="0% (0/1)"/>
+            <line number="28" hits="23" branch="false"/>
+            <line number="29" hits="23" branch="false"/>
+            <line number="30" hits="23" branch="false"/>
+            <line number="31" hits="1" branch="false"/>
+            <line number="32" hits="1" branch="false"/>
+            <line number="33" hits="1" branch="false"/>
+            <line number="34" hits="83" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="35" hits="83" branch="false"/>
+            <line number="36" hits="83" branch="false"/>
+            <line number="37" hits="1" branch="false"/>
+            <line number="38" hits="1" branch="false"/>
+            <line number="39" hits="1" branch="false"/>
+            <line number="40" hits="1" branch="false"/>
+            <line number="41" hits="1" branch="false"/>
+            <line number="42" hits="1" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="43" hits="23" branch="false"/>
+            <line number="44" hits="23" branch="false"/>
+          </lines>
+        </class>
+        <class name="success.component.js" filename="src\components\success.component.js" line-rate="1" branch-rate="1">
+          <methods>
+            <method name="SuccessComponent" hits="1" signature="()V">
+              <lines>
+                <line number="19" hits="1"/>
+              </lines>
+            </method>
+            <method name="connectedCallback" hits="1" signature="()V">
+              <lines>
+                <line number="20" hits="1"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="1" hits="1" branch="false"/>
+            <line number="2" hits="1" branch="false"/>
+            <line number="3" hits="1" branch="false"/>
+            <line number="4" hits="1" branch="false"/>
+            <line number="5" hits="1" branch="false"/>
+            <line number="6" hits="1" branch="false"/>
+            <line number="7" hits="1" branch="false"/>
+            <line number="8" hits="1" branch="false"/>
+            <line number="9" hits="1" branch="false"/>
+            <line number="10" hits="1" branch="false"/>
+            <line number="11" hits="1" branch="false"/>
+            <line number="12" hits="1" branch="false"/>
+            <line number="13" hits="1" branch="false"/>
+            <line number="14" hits="1" branch="false"/>
+            <line number="15" hits="1" branch="false"/>
+            <line number="16" hits="1" branch="false"/>
+            <line number="17" hits="1" branch="false"/>
+            <line number="18" hits="1" branch="false"/>
+            <line number="19" hits="1" branch="true" condition-coverage="100% (2/2)"/>
+            <line number="20" hits="1" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="21" hits="1" branch="false"/>
+            <line number="22" hits="1" branch="false"/>
+            <line number="23" hits="1" branch="false"/>
+            <line number="24" hits="1" branch="false"/>
+            <line number="25" hits="1" branch="false"/>
+            <line number="26" hits="1" branch="false"/>
+            <line number="27" hits="1" branch="false"/>
+            <line number="28" hits="1" branch="false"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="src.pipes" line-rate="1" branch-rate="1">
+      <classes>
+        <class name="rides-summary.pipe.js" filename="src\pipes\rides-summary.pipe.js" line-rate="1" branch-rate="1">
+          <methods>
+            <method name="ridesSummary" hits="3" signature="()V">
+              <lines>
+                <line number="5" hits="3"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="1" hits="1" branch="false"/>
+            <line number="2" hits="1" branch="false"/>
+            <line number="3" hits="1" branch="false"/>
+            <line number="4" hits="1" branch="false"/>
+            <line number="5" hits="1" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="6" hits="3" branch="false"/>
+            <line number="7" hits="3" branch="false"/>
+            <line number="8" hits="3" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="9" hits="1" branch="true" condition-coverage="100% (3/3)"/>
+            <line number="10" hits="1" branch="false"/>
+            <line number="11" hits="3" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="12" hits="2" branch="false"/>
+            <line number="13" hits="2" branch="false"/>
+            <line number="14" hits="3" branch="false"/>
+            <line number="15" hits="3" branch="false"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="src.services" line-rate="1" branch-rate="0.6973">
+      <classes>
+        <class name="order.service.js" filename="src\services\order.service.js" line-rate="1" branch-rate="1">
+          <methods>
+            <method name="OrderService" hits="5" signature="()V">
+              <lines>
+                <line number="8" hits="5"/>
+              </lines>
+            </method>
+            <method name="get" hits="2" signature="()V">
+              <lines>
+                <line number="15" hits="2"/>
+              </lines>
+            </method>
+            <method name="set" hits="4" signature="()V">
+              <lines>
+                <line number="26" hits="4"/>
+              </lines>
+            </method>
+            <method name="clear" hits="2" signature="()V">
+              <lines>
+                <line number="31" hits="2"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="1" hits="1" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="2" hits="3" branch="false"/>
+            <line number="3" hits="3" branch="false"/>
+            <line number="4" hits="3" branch="false"/>
+            <line number="5" hits="3" branch="false"/>
+            <line number="6" hits="3" branch="false"/>
+            <line number="7" hits="3" branch="false"/>
+            <line number="8" hits="3" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="9" hits="5" branch="false"/>
+            <line number="10" hits="5" branch="false"/>
+            <line number="11" hits="3" branch="false"/>
+            <line number="12" hits="3" branch="false"/>
+            <line number="13" hits="3" branch="false"/>
+            <line number="14" hits="3" branch="false"/>
+            <line number="15" hits="3" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="16" hits="2" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="17" hits="1" branch="false"/>
+            <line number="18" hits="1" branch="false"/>
+            <line number="19" hits="1" branch="false"/>
+            <line number="20" hits="1" branch="false"/>
+            <line number="21" hits="2" branch="false"/>
+            <line number="22" hits="2" branch="false"/>
+            <line number="23" hits="3" branch="false"/>
+            <line number="24" hits="3" branch="false"/>
+            <line number="25" hits="3" branch="false"/>
+            <line number="26" hits="3" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="27" hits="4" branch="false"/>
+            <line number="28" hits="4" branch="false"/>
+            <line number="29" hits="4" branch="false"/>
+            <line number="30" hits="3" branch="false"/>
+            <line number="31" hits="3" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="32" hits="2" branch="false"/>
+            <line number="33" hits="2" branch="false"/>
+            <line number="34" hits="1" branch="false"/>
+            <line number="35" hits="1" branch="false"/>
+            <line number="36" hits="1" branch="false"/>
+          </lines>
+        </class>
+        <class name="ride.service.js" filename="src\services\ride.service.js" line-rate="1" branch-rate="0.6714">
+          <methods>
+            <method name="_regenerator" hits="3" signature="()V">
+              <lines>
+                <line number="2" hits="3"/>
+              </lines>
+            </method>
+            <method name="i" hits="3" signature="()V">
+              <lines>
+                <line number="2" hits="3"/>
+              </lines>
+            </method>
+            <method name="d" hits="0" signature="()V">
+              <lines>
+                <line number="2" hits="0"/>
+              </lines>
+            </method>
+            <method name="d" hits="6" signature="()V">
+              <lines>
+                <line number="2" hits="6"/>
+              </lines>
+            </method>
+            <method name="Generator" hits="0" signature="()V">
+              <lines>
+                <line number="2" hits="0"/>
+              </lines>
+            </method>
+            <method name="GeneratorFunction" hits="0" signature="()V">
+              <lines>
+                <line number="2" hits="0"/>
+              </lines>
+            </method>
+            <method name="GeneratorFunctionPrototype" hits="0" signature="()V">
+              <lines>
+                <line number="2" hits="0"/>
+              </lines>
+            </method>
+            <method name="f" hits="6" signature="()V">
+              <lines>
+                <line number="2" hits="6"/>
+              </lines>
+            </method>
+            <method name="_regenerator" hits="9" signature="()V">
+              <lines>
+                <line number="2" hits="9"/>
+              </lines>
+            </method>
+            <method name="_regeneratorDefine2" hits="3" signature="()V">
+              <lines>
+                <line number="2" hits="3"/>
+              </lines>
+            </method>
+            <method name="_regeneratorDefine" hits="33" signature="()V">
+              <lines>
+                <line number="2" hits="33"/>
+              </lines>
+            </method>
+            <method name="o" hits="9" signature="()V">
+              <lines>
+                <line number="2" hits="9"/>
+              </lines>
+            </method>
+            <method name="asyncGeneratorStep" hits="6" signature="()V">
+              <lines>
+                <line number="2" hits="6"/>
+              </lines>
+            </method>
+            <method name="_asyncToGenerator" hits="6" signature="()V">
+              <lines>
+                <line number="2" hits="6"/>
+              </lines>
+            </method>
+            <method name="_next" hits="6" signature="()V">
+              <lines>
+                <line number="2" hits="6"/>
+              </lines>
+            </method>
+            <method name="_throw" hits="0" signature="()V">
+              <lines>
+                <line number="2" hits="0"/>
+              </lines>
+            </method>
+            <method name="_classCallCheck" hits="5" signature="()V">
+              <lines>
+                <line number="2" hits="5"/>
+              </lines>
+            </method>
+            <method name="_defineProperties" hits="3" signature="()V">
+              <lines>
+                <line number="2" hits="3"/>
+              </lines>
+            </method>
+            <method name="_createClass" hits="3" signature="()V">
+              <lines>
+                <line number="2" hits="3"/>
+              </lines>
+            </method>
+            <method name="_toPropertyKey" hits="6" signature="()V">
+              <lines>
+                <line number="2" hits="6"/>
+              </lines>
+            </method>
+            <method name="_toPrimitive" hits="6" signature="()V">
+              <lines>
+                <line number="2" hits="6"/>
+              </lines>
+            </method>
+            <method name="RideService" hits="5" signature="()V">
+              <lines>
+                <line number="1" hits="5"/>
+              </lines>
+            </method>
+            <method name="_callee" hits="2" signature="()V">
+              <lines>
+                <line number="6" hits="2"/>
+              </lines>
+            </method>
+            <method name="_callee2" hits="1" signature="()V">
+              <lines>
+                <line number="16" hits="1"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="1" hits="1" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="2" hits="3" branch="true" condition-coverage="61.016949152542374% (36/59)"/>
+            <line number="3" hits="3" branch="false"/>
+            <line number="4" hits="3" branch="false"/>
+            <line number="5" hits="3" branch="false"/>
+            <line number="6" hits="3" branch="true" condition-coverage="100% (3/3)"/>
+            <line number="7" hits="2" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="8" hits="2" branch="false"/>
+            <line number="9" hits="3" branch="false"/>
+            <line number="10" hits="3" branch="false"/>
+            <line number="11" hits="3" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="12" hits="3" branch="false"/>
+            <line number="13" hits="3" branch="false"/>
+            <line number="14" hits="3" branch="false"/>
+            <line number="15" hits="3" branch="false"/>
+            <line number="16" hits="1" branch="true" condition-coverage="100% (3/3)"/>
+            <line number="17" hits="1" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="18" hits="1" branch="true" condition-coverage="100% (1/1)"/>
+            <line number="19" hits="1" branch="false"/>
+            <line number="20" hits="1" branch="false"/>
+            <line number="21" hits="1" branch="false"/>
+            <line number="22" hits="1" branch="false"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
   </packages>
 </coverage>
