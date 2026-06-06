@@ -17,6 +17,10 @@ on:
     #Roda toda sexta-feira às 00:00
     - cron: '0 0 * * 5'
 
+  push:
+    branches:
+      - master
+
 # tarefas dentro de pipeline = jobs
 
 jobs:
